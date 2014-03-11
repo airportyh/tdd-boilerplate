@@ -10,6 +10,12 @@
     <script src="../../index.js"></script>
     <script src="../../vendor/assert.js"></script>
     <script src="../../vendor/mocha/mocha.js"></script>
+    <script>
+      if (location.href.indexOf('://localhost:7357') != -1) {
+        // testem goes between test runner setup and the tests
+        document.write('<script src="/testem.js">' + '<\/' + 'script>');
+      }
+    </script>
     <script>mocha.setup('bdd')</script>
 
     <!-- get tests and start -->
