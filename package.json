@@ -4,7 +4,7 @@
   "description": "TDD boilerplate for JavaScript projects.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/mocha/node-suite.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/airportyh/tdd-boilerplate/issues"
   },
-  "homepage": "https://github.com/airportyh/tdd-boilerplate"
+  "homepage": "https://github.com/airportyh/tdd-boilerplate",
+  "devDependencies": {
+    "mocha": "~1.17.1"
+  }
 }
